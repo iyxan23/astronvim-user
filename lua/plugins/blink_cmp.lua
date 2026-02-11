@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- blink.cmp configuration to replace nvim-cmp in AstroNvim v5
 return {
   "Saghen/blink.cmp",
