@@ -51,6 +51,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "dartls"
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -64,6 +65,10 @@ return {
           },
         },
       },
+      dartls = {
+        -- because i use fvm
+        cmd = { "fvm", "dart", "language-server", "--protocol=lsp" }
+      }
     },
     -- customize how language servers are attached
     handlers = {
