@@ -32,6 +32,7 @@ return {
         wrap = false,
         showtabline = 0,
         scrolloff = 3,
+        guifont = "JetBrainsMono Nerd Font Mono:h10", -- neovide font
       },
 
       g = {
