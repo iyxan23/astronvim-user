@@ -103,7 +103,9 @@ return {
           function()
             local bufs = vim.fn.getbufinfo { buflisted = 1 }
             require("astrocore.buffer").close(vim.api.nvim_get_current_buf())
-            if require("astrocore").is_available "snacks.nvim" and not bufs[2] then require("snacks.dashboard").open() end
+            if require("astrocore").is_available "snacks.nvim" and not bufs[2] then
+              require("snacks.dashboard").open()
+            end
           end,
           desc = "Close buffer",
         },
@@ -112,7 +114,9 @@ return {
             require("astroui.status.heirline").buffer_picker(function(bufnr)
               local bufs = vim.fn.getbufinfo { buflisted = 1 }
               require("astrocore.buffer").close(bufnr)
-              if require("astrocore").is_available "snacks.nvim" and not bufs[2] then require("snacks.dashboard").open() end
+              if require("astrocore").is_available "snacks.nvim" and not bufs[2] then
+                require("snacks.dashboard").open()
+              end
             end)
           end,
           desc = "Close buffer from tabline",
