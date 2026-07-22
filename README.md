@@ -157,15 +157,10 @@ free to steal anything :)
     appear pinned, but the implementation is kind of ugly, so I decided to
     leave it out.
 
-- Codeium
+- Copilot
 
-  - Disabled codeium's default keybindings (`<Tab>` won't work). Use these
-    instead:
-
-    - `<C-g>` to accept autocompletion
-    - `<C-]>` to clear autocompletion
-    - `<M-[>` & `<M-]>` to cycle autocompletion
-    - `<M-\>` to trigger autocompletion
+  - Pointed its `node_command` to my local path. you might wanna update this
+    on your own.
 
 - And the following community packages:
   ```lua
