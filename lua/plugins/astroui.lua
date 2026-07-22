@@ -32,23 +32,6 @@ return {
         lsp = true,        -- use lsp folding (Neovim v0.11+ only)
       },
     },
-    -- configure status providers and components
-    status = {
-      providers = {
-        lsp_client_names = {
-          mappings = {
-            -- display `lua_ls` as just `LUA` in the statusline
-            lua_ls = "LUA",
-            -- display `tsserver` as just `TS` in the statusline
-            tsserver = "TS",
-            -- display `gopls` as just `GO` in the statusline
-            gopls = "GO",
-            -- display `rust_analyzer` as just `RS` in the statusline
-            rust_analyzer = "RS",
-          },
-        },
-      },
-    },
     -- Icons can be configured throughout the interface
     icons = {
       -- configure the loading of the lsp in the status line
