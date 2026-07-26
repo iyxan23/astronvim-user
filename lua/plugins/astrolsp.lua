@@ -67,8 +67,17 @@ return {
       },
       ["dartls"] = {
         -- because i use fvm
-        cmd = { "fvm", "dart", "language-server", "--protocol=lsp" }
-      }
+        cmd = { "fvm", "dart", "language-server", "--protocol=lsp" },
+      },
+      ["eslint"] = {
+        settings = {
+          workingDirectories = { mode = "auto" },
+          useFlatConfig = true,
+          experimental = {
+            useFlatConfig = true,
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
